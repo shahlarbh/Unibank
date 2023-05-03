@@ -1,0 +1,373 @@
+.hrsection{
+    margin-bottom: 2rem;
+
+    h1{
+        font-size: 32px;
+        font-family: bold;
+        color: #FF6400;
+        margin-bottom: 2rem;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 14px;
+        font-family: bold;
+        color: #A1A1A1;
+        padding: 15px 30px;
+        border: 2px solid #969696;
+        border-radius: 25px;
+        margin-right: 15px;
+    }
+}
+
+.video{
+    height: 270px;
+}
+
+.hrinfo{
+    margin-bottom: 2rem;
+    
+    .box{
+        background-color: #FAFAFA;
+        padding: 2.5rem 3rem;
+        height: 280px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            background-color: #FF6400;
+        }
+
+        &:hover{
+            .chevron{
+                color: #FFFFFF;
+            }
+
+            .hricon{
+                i{
+                    color: #FFFFFF;
+                }
+            }
+
+            .text{
+                h4, p{
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .hricon{
+            text-align: center;
+
+            i{
+                font-size: 48px;
+                color: #FF6400;
+            }
+        }
+
+        .text{
+            h4{
+                font-size: 20px;
+                font-family: bold;
+                text-align: center;
+                margin-top: 1rem;
+                color: #000000;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #000000;
+                font-family: regular;
+
+                span{
+                    font-family: regularpro;
+                }
+            }
+        }
+    }
+}
+
+.worker{
+    .person{
+        background-color: #FAFAFA;
+        padding: 2rem 2rem 2rem 4rem;
+        border-radius: 10px;
+        height: 340px;
+        margin-bottom: 2rem;
+
+        .img{
+            width: 20%;
+            border-radius: 100%;
+
+            img{
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+
+        .text{
+            h4{
+                font-size: 20px;
+                font-family: bold;
+                color: #000000;
+                margin-top: 1rem;
+            }
+
+            span{
+                font-size: 14px;
+                font-family: regular;
+                color: rgba(0,0,0,.5);
+            }
+
+            p{
+                font-size: 14px;
+                color: #000000;
+                font-family: regular;
+                line-height: 18px;
+                margin-top: 0.8rem;
+
+                span{
+                    font-family: regularpro;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.hrabout{
+    background-color: #FAFAFA;
+    padding: 2rem 2rem 2rem 4rem;
+    border-radius: 10px;
+
+    h1{
+        font-size: 30px;
+        color: #FF6400;
+        font-family: bold;
+    }
+
+    p{
+        font-size: 14px;
+        color: #000000;
+        font-family: regular;
+
+        span{
+            font-family: regularpro;
+        }
+    }
+}
+
+.extra{
+    margin: 2rem 0 3rem;
+
+    .box{
+        background-color: #FF6400;
+        border-radius: 10px;
+        padding: 2rem;
+        height: 200px;
+
+        .boxicon{
+            text-align: center;
+
+            i{
+                color: #FFFFFF;
+                font-size: 48px;
+            }
+        }
+
+        .text{
+            margin-top: 1rem;
+            p{
+                color: #FFFFFF;
+                font-size: 14px;
+                font-family: bold;
+                text-align: center;
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.mainh1{
+    padding-left: 0.8rem;
+    color: #FF6400;
+    font-size: 32px;
+    font-family: bold;
+}
+
+.inform{
+    padding: 1rem 0 5rem;
+
+    .box{
+        h2{
+            font-size: 20px;
+            color: #000000;
+            font-family: bold;
+        }
+
+        p{
+            color: #000000;
+            font-size: 14px;
+            font-family: regular;
+
+            span{
+                font-family: regularpro;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .hrsection{
+        margin-bottom: 0.2rem;
+
+        h1{
+            font-size: 22px;
+            padding-top: 1rem;
+        }
+
+        a{
+            font-size: 8px;
+            padding: 9px 14px;
+            margin-right: 1px;
+        }
+    }
+
+    .video{
+        border-radius: 10px;
+        height: 200px;
+    }
+
+    .hrinfo{
+        .box{
+            display: flex;
+            justify-content: space-between;
+            height: 140px;
+            padding: 0.8rem 3rem;
+            position: relative;
+
+            .hricon{
+                text-align: start;
+                position: relative;
+
+                i{
+                    font-size: 30px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate((-50%,-50%));
+                }
+            }
+
+            .text{
+                margin-left: 3rem;
+                h4{
+                    text-align: start;
+                    font-size: 16px;
+                }
+
+                p{
+                    text-align: start;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .chevron{
+            display: block !important;
+            position: absolute;
+            top: 45%;
+            left: 92%;
+            font-size: 10px;
+            color: #969696;
+        }
+    }
+
+    .worker{
+        .person{
+            margin-bottom: 0.3rem !important;
+            padding: 1rem 2rem 1rem 4rem !important;
+            height: 280px;
+        }
+
+        .text{
+            h4{
+                font-size: 16px !important;
+            }
+
+            span{
+                font-size: 10px !important;
+            }
+
+            p{
+                font-size: 11px !important;
+                margin-top: 0.3rem !important;
+            }
+        }
+    }
+
+    .hrabout{
+        margin-top: 1rem;
+
+        h1{
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 11px !important;
+        }
+    }
+
+    .extra{
+        margin-bottom: 1rem;
+        .box{
+            display: flex !important;
+            justify-content: space-between !important;
+            height: 80px;
+            margin-bottom: 1rem;
+            padding: 2rem;
+
+            .boxicon{
+                text-align: start;
+                width: 10%;
+
+                i{
+                    font-size: 28px;
+                }
+            }
+
+            .text{
+                width: 90%;
+                margin: 0;
+
+                p{
+                    width: 100%;
+                    text-align: start !important;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .mainh1{
+        font-size: 20px;
+    }
+
+    .inform{
+        padding-bottom: 1rem;
+
+        .box{
+            h2{
+                font-size: 14px;
+            }
+
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}

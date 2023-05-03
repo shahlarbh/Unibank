@@ -1,0 +1,399 @@
+.darkmode{
+    .selecttab{
+        &::after{
+            border-top: 2px solid #1A1A1A !important;
+            border-right: 2px solid #1A1A1A !important;
+            background-color: #1A1A1A !important;
+        }
+    }
+
+    .selectloc{
+        &::after{
+            border-top: 2px solid #000000 !important;
+            border-right: 2px solid #000000 !important;
+            background-color: #000000 !important;
+        }
+    }
+
+    .customcontainer{
+        background-color: #000000 !important;
+    }
+
+    .hamburgermenudiv{
+        background-color: #000000 !important;
+
+        .menuhamburger, .langhamburger, .searchresp{
+            a, i{
+                background-color: #323232 !important;
+                color: #FFFFFF !important;
+            }
+        }
+
+        .navigationmenu, .navbarmenu{
+            a{
+                color: #FFFFFF !important;
+            }
+        }
+    }
+
+    .responsiveheader{
+        background-color: #000000 !important;
+
+        .hamburgermenu, .phone{
+            i, a{
+                background-color: rgba(255,255,255,.1);
+            }
+        }
+
+        .hamburgermenu{
+            i{
+                color: #FFFFFF !important;
+            }
+        }
+
+        .phone{
+            i{
+                background-color: transparent !important;
+            }
+
+            span{
+                color: #FFFFFF !important;
+            }
+        }
+    }
+
+    .firstheader, .secondheader{
+        background-color: #000000;
+    }
+
+    .firstheader, .secondheader{
+        nav{
+            a{
+                color: #FFFFFF !important;
+            }
+        }
+
+        .right{
+            .menu, .lang, .search{
+                a, i{
+                    background-color: #323232 !important;
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+
+        span{
+            color: #FFFFFF !important;
+        }
+    }
+
+    #sun{
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    footer{
+        background-color: #000000 !important;
+
+        .allfooter{
+            a{
+                color: #FFFFFF !important;
+            }
+        }
+
+        .footericons{
+            i{
+                color: #000000 !important;
+            }
+        }
+
+        .theend{
+            h4, p{
+                color: #FFFFFF !important;
+            }
+        }
+
+        hr{
+            color: #FFFFFF !important;
+        }
+    }
+
+    section{
+        background-color: #000000;
+
+        .info{
+            .box{
+                background-color: rgba(255,255,255,.1) !important;
+
+                h4, span{
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+
+        .ucard{
+            background-color: rgba(255,255,255,.1) !important;
+
+            .infocard{
+                p{
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+
+        .ubank{
+            background-color: rgba(255,255,255,.1) !important;
+
+            .text{
+                .simple{
+                    p{
+                        color: #FFFFFF !important;
+                    }
+
+                    .icons{
+                        img{
+                            background-color: silver !important;
+                        }
+                    }
+                }
+            }
+
+            .responsivesimple{
+                p{
+                    color: #FFFFFF !important;
+                }
+
+                img{
+                    background-color: silver !important;
+                }
+            }
+        }
+
+        .currency{
+            background-color: rgba(255,255,255,.1) !important;
+
+            .box{
+                h4, p{
+                    color: #FFFFFF !important;
+                }
+
+                table{
+                    th, td{
+                        color: #FFFFFF !important;
+                    }
+                }
+            }
+
+            .currencycalc{
+                background-color: rgba(255,255,255,.1) !important;
+
+                .text{
+                    h2, p{
+                        color: #FFFFFF !important;
+                    }
+                }
+
+                .calc{
+                    .operation{
+                        input{
+                            background-color: #464646;
+                            border: 1px solid rgba(50,50,50,.1);
+                            color: #FFFFFF !important;
+                        }
+
+                        span{
+                            color: #FFFFFF !important;
+                        }
+
+                        i{
+                            color: silver !important;
+                        }
+
+                        .hidden{
+                            color: #FF6400 !important;
+                        }
+
+                        .reserveoptions, .reserveoptions2{
+                            background-color: rgba(255,255,255,.1) !important;
+
+                            a{
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .information{
+            .box{
+                background-color: rgba(255,255,255,.1) !important;
+
+                h4, p, span{
+                    color: #FFFFFF !important;
+                }
+
+                &:hover{
+                    background-color: #FF6400 !important;
+                }
+            }
+        }
+
+        .allcontent{
+            .service, .connect{
+                background-color: rgba(255,255,255,.1) !important;
+
+                p{
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+
+        .branch{
+            background: rgba(255,255,255,.1);
+
+            &:hover{
+                background-color: #FF6400 !important;
+            }
+
+            .address, .time, .about{
+                h4, p{
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+
+        .warning2{
+            background: rgba(255,255,255,.1);
+        }
+
+        .hrinfo{
+            .box{
+                background: rgba(255,255,255,.1) !important;
+
+                &:hover{
+                    background-color: #FF6400 !important;
+                }
+
+                .text{
+                    h4, p{
+                        color: #FFFFFF !important;
+                    }
+                }
+            }
+        }
+
+        .person{
+            background: rgba(255,255,255,.1) !important;
+
+            .text{
+                h4, span, p{
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+
+        .hrabout{
+            background: rgba(255,255,255,.1) !important;
+
+            p{
+                color: #FFFFFF !important;
+            }
+        }
+
+        .inform{
+            .box{
+                h2, p{
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+
+        .ucarddiv{
+            background: rgba(255,255,255,.1) !important;
+
+            h1{
+                span{
+                    color: #FFFFFF !important;
+                }
+            }
+
+            p{
+                color: #FFFFFF !important;
+            }
+        }
+
+        .ubankcards{
+            .box{
+                background: rgba(255,255,255,.1) !important;
+
+                .text{
+                    h2, p{
+                        color: #FFFFFF !important;
+                    }
+                }
+            }
+        }
+
+        .title{
+            h1{
+                color: #FFFFFF !important;
+            }
+        }
+
+        .table{
+            .thead{
+                th{
+                    color: #FFFFFF !important;
+                }
+            }
+
+            .tbody{
+                background: rgba(255,255,255,.1) !important;
+
+                th, td{
+                    color: #FFFFFF !important;
+                }
+
+                input{
+                    color: #FFFFFF !important;
+                    background-color: #000000 !important;
+                }
+            }
+        }
+    }
+
+    .forcedclass{
+        background-color: #000000 !important;
+    }
+
+    .searchdiv{
+        background-color: rgba(9,8,8,.9);
+
+        .close, .loop, p{
+            color: #FFFFFF !important;
+        }
+
+        .searchextension{
+            background-color: rgba(9,8,8,.9);
+
+            p{
+                span{
+                    color: #FFFFFF !important;
+                }
+            }
+
+            a{
+                color: #FFFFFF !important;
+                border-color: #FFFFFF !important;
+            }
+        }
+
+        form{
+            input{
+                background-color: #252323;
+                color: #FFFFFF !important;
+            }
+        }
+    }
+}

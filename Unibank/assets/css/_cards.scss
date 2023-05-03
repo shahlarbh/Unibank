@@ -1,0 +1,214 @@
+.title{
+    padding-top: 1rem;
+    h1{
+        font-size: 30px;
+        font-family: boldpro;
+        color: #FF6400;
+    }
+}
+
+.ucarddiv{
+    padding: 3rem 4rem;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    margin: 2rem 0;
+
+    .img{
+        margin-right: 2rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    h1{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+       span{
+        font-size: 28px;
+        font-family: boldpro;
+        color: #000000;
+       }
+
+       a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: bold;
+        padding: 15px 30px;
+        background-color: #FF6400;
+        border-radius: 25px;
+       }
+    }
+
+    p{
+        font-size: 14px;
+        color: #000000;
+        font-family: regular;
+    }
+
+    .parametrs{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+        .box{
+            i{
+                font-size: 36px;
+                color: #FF6400;
+                margin-right: 10px;
+            }
+
+            p{
+                display: inline-block;
+                width: 50%;
+                font-size: 18px;
+                color: #000000;
+                font-family: boldpro;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.ubankcards{
+    padding: 2rem 0;
+    
+    .box{
+        padding: 3rem 4rem;
+        background-color: #FAFAFA;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        height: 500px;
+
+        .img{
+            width: 60%;
+            border-radius: 10px;
+
+            img{
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: -15px 15px 30px 0 rgba(0,0,0,.24);
+            }
+        }
+
+        .text{
+            h2{
+                margin-top: 2rem;
+                font-size: 24px;
+                font-family: boldpro;
+                color: #000000;
+            }
+
+            p{
+                font-size: 14px;
+                color: #000000;
+                font-family: regular;
+                margin-top: 1rem;
+            }
+
+            .cardprice{
+                font-size: 20px;
+                color: #000000;
+                font-family: boldpro;
+            }
+
+            button{
+                background-color: #FF6400;
+                padding: 12px 24px;
+                border-radius: 25px;
+                color: #FFFFFF;
+                font-size: 16px;
+                font-family: bold;
+                border: none;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .ucarddiv{
+        padding: 1.5rem 2rem 6rem 2rem;
+
+        .img{
+            padding: 0 4rem;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            span{
+                font-size: 18px;
+            }
+
+            a{
+                position: absolute;
+                top: 680%;
+            }
+        }
+
+        .parametrs{
+            margin-top: 0;
+
+            .box{
+                i{
+                    font-size: 30px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                p{
+                    font-size: 12px;
+                    display: block;
+                    text-align: center;
+                    width: 60%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .ubankcards{
+        .box{
+            padding: 1.5rem 2rem;
+
+            .img{
+                width: 100%;
+            }
+
+            .text{
+                h2{
+                    text-align: center;
+                    margin-top: 0.5rem;
+                    font-size: 18px;
+                }
+
+                p{
+                    font-size: 11px;
+                    text-align: center;
+                    margin-top: 0.5rem;
+                }
+
+                .cardprice{
+                    font-size: 18px;
+                    margin: 0;
+                }
+
+                button{
+                    font-size: 14px;
+                    padding: 10px 20px;
+                    display: block;
+                    margin: 1rem auto 0;
+                }
+            }
+        }
+    }
+}

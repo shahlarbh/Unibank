@@ -1,0 +1,2637 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: extra-light;
+  src: url(/assets/fonts/Coco-Sharp-Extralight-trial.ttf);
+}
+@font-face {
+  font-family: light;
+  src: url(/assets/fonts/Coco-Sharp-Light-trial.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(/assets/fonts/Coco-Sharp-Regular-trial.ttf);
+}
+@font-face {
+  font-family: bold;
+  src: url(/assets/fonts/Coco-Sharp-Bold-trial.ttf);
+}
+@font-face {
+  font-family: arial;
+  src: url(/assets/fonts/Arial.ttf);
+}
+@font-face {
+  font-family: regularpro;
+  src: url(/assets/fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: semiboldpro;
+  src: url(/assets/fonts/SourceSansPro-SemiBold.ttf);
+}
+@font-face {
+  font-family: boldpro;
+  src: url(/assets/fonts/SourceSansPro-Bold.ttf);
+}
+.scroll {
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.customcontainer {
+  padding: 0 5rem;
+}
+
+.active {
+  font-family: bold !important;
+  color: #FF6400 !important;
+  border: 1px solid #FF6400 !important;
+}
+
+.selected {
+  background-color: #FF6400 !important;
+}
+
+.opacity {
+  opacity: 0 !important;
+}
+
+.selecttab {
+  color: #FF6400 !important;
+  border-color: #FF6400 !important;
+  position: relative;
+}
+.selecttab::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-35%);
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #FAFAFA;
+  border-right: 2px solid #FAFAFA;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  background-color: #FAFAFA;
+  left: 50%;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+header .firstheader {
+  background-color: #FAFAFA;
+}
+header .firstheader .firsttitle {
+  padding: 0.8rem 0;
+}
+header .firstheader .firsttitle .left .logo {
+  width: 4%;
+}
+header .firstheader .firsttitle .left .logo img {
+  width: 100%;
+}
+header .firstheader .firsttitle .left nav a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: regular;
+  color: #323232;
+  margin-right: 1rem;
+}
+header .firstheader .firsttitle .right .menu {
+  margin-right: 0.8rem;
+}
+header .firstheader .firsttitle .right .menu a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: regular;
+  color: #323232;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 14px -10px rgba(0, 0, 0, 0.3);
+}
+header .firstheader .firsttitle .right .theme {
+  margin-right: 0.8rem;
+}
+header .firstheader .firsttitle .right .theme i {
+  font-size: 16px;
+  padding: 8px 10px 9px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header .firstheader .firsttitle .right .theme .night {
+  color: #FFFFFF;
+  background-color: #323232;
+}
+header .firstheader .firsttitle .right .theme .morning {
+  color: #323232;
+  background-color: #FFFFFF;
+}
+header .firstheader .firsttitle .right .lang {
+  margin-right: 0.8rem;
+}
+header .firstheader .firsttitle .right .lang a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: bold;
+  color: #323232;
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 14px -10px rgba(0, 0, 0, 0.3);
+}
+header .firstheader .firsttitle .right .search span i {
+  font-size: 16px;
+  color: #323232;
+  padding: 8px 10px 9px 10px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+header .secondheader {
+  padding: 1.4rem 0;
+}
+header .secondheader .secondtitle nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: bold;
+  color: #000000;
+  margin-right: 1rem;
+}
+header .secondheader .secondtitle .connection .creditcard {
+  margin-right: 1.5rem;
+}
+header .secondheader .secondtitle .connection .creditcard a {
+  text-decoration: none;
+  position: relative;
+}
+header .secondheader .secondtitle .connection .creditcard a i {
+  font-size: 30px;
+  color: #FF6400;
+}
+header .secondheader .secondtitle .connection .creditcard a span {
+  font-size: 12px;
+  font-weight: 900;
+  color: #FFFFFF;
+  padding: 0 3px;
+  background-color: red;
+  border-radius: 20px;
+  position: absolute;
+  top: -110%;
+  left: 105%;
+}
+header .secondheader .secondtitle .connection .phone {
+  margin-right: 1rem;
+}
+header .secondheader .secondtitle .connection .phone a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #F5F5F6;
+  border-radius: 25px;
+}
+header .secondheader .secondtitle .connection .phone a i {
+  font-size: 18px;
+  color: #FF6400;
+}
+header .secondheader .secondtitle .connection .phone a span {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: arial;
+  color: #000000;
+}
+header .secondheader .secondtitle .connection .banking a {
+  text-decoration: none;
+  border: 1px solid #F5F5F6;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+header .secondheader .secondtitle .connection .banking a i {
+  color: #FF6400;
+  font-size: 20px;
+  margin-right: 5px;
+}
+header .secondheader .secondtitle .connection .banking a span {
+  color: #000000;
+  font-size: 14px;
+  font-family: bold;
+}
+header .searchdiv {
+  position: absolute;
+  top: 9%;
+  width: 100%;
+  height: 240px;
+  background-color: #FFFFFF;
+  z-index: 1 !important;
+}
+header .searchdiv .close {
+  position: absolute;
+  margin-top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #323232;
+  cursor: pointer;
+}
+header .searchdiv p {
+  position: absolute;
+  margin-top: 5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  font-family: regular;
+  color: #000000;
+}
+header .searchdiv form {
+  display: inline-block;
+  width: 48%;
+  position: absolute;
+  margin-top: 9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 3rem;
+}
+header .searchdiv form input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline-style: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: bold;
+  padding: 0.7rem 0;
+}
+header .searchdiv .loop {
+  position: absolute;
+  margin-top: 9.8rem;
+  left: 71%;
+  font-size: 16px;
+  color: #FF6400;
+  cursor: pointer;
+}
+header .searchdiv .searchextension {
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  top: 240px;
+  background-color: #FFFFFF;
+  z-index: 1 !important;
+}
+header .searchdiv .searchextension p {
+  position: absolute;
+  margin-top: 2rem;
+}
+header .searchdiv .searchextension p span {
+  font-size: 16px;
+  color: #000000;
+  font-family: regular;
+  position: relative;
+  margin-right: 9rem;
+}
+header .searchdiv .searchextension p span::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 200px;
+  bottom: -30%;
+  background-color: #FF6400;
+}
+header .searchdiv .searchextension a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #969696;
+  font-family: bold;
+  padding: 16px 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  position: absolute;
+  margin-top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main section .customcarusel {
+  width: 100%;
+  padding-top: 1rem;
+}
+main section .customcarusel .controls {
+  margin-bottom: 2rem;
+  position: relative;
+}
+main section .customcarusel .controls ul {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+}
+main section .customcarusel .controls ul li {
+  width: 8px;
+  height: 8px;
+  background-color: #E6E6E6;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+main section .customcarusel .carusel {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+main section .customcarusel .carusel .slider {
+  display: flex;
+  height: 100%;
+  width: 400%;
+  transition: 0.5s;
+}
+main section .customcarusel .carusel .slider .sliderpage {
+  background-color: #FF6400;
+  height: 400px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  flex-basis: 100%;
+}
+main section .customcarusel .carusel .slider .sliderpage .img {
+  width: 70%;
+  margin: auto;
+}
+main section .customcarusel .carusel .slider .sliderpage .img img {
+  width: 100%;
+}
+main section .customcarusel .carusel .slider .sliderpage .img2 {
+  margin-top: 6.2rem;
+}
+main section .customcarusel .carusel .slider .sliderpage .img3 {
+  margin-top: 1.95rem;
+}
+main section .customcarusel .carusel .slider .sliderpage .img3 img {
+  width: 90%;
+}
+main section .customcarusel .carusel .slider .sliderpage .img4 {
+  margin-top: 6.2rem;
+}
+main section .customcarusel .carusel .slider .sliderpage .text {
+  width: 80%;
+  margin: 6rem 5rem 6rem 0;
+}
+main section .customcarusel .carusel .slider .sliderpage .text h1 {
+  font-size: 36px;
+  font-family: bold;
+  color: #FFFFFF;
+  margin-bottom: 1.4rem;
+}
+main section .customcarusel .carusel .slider .sliderpage .text p {
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+main section .customcarusel .carusel .slider .sliderpage .text a {
+  font-size: 14px;
+  font-family: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 1px solid #FFFFFF;
+  padding: 16px 25px;
+  border-radius: 25px;
+}
+main section .info {
+  margin: 2rem 0 4rem;
+}
+main section .info .box {
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 3rem 0;
+}
+main section .info .box h4 {
+  font-size: 18px;
+  font-family: bold;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+main section .info .box h2 {
+  font-size: 48px;
+  font-family: arial;
+  font-weight: bold;
+  color: #FF6400;
+  text-align: center;
+}
+main section .info .box span {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+  text-align: center;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+main section .info .box a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: bold;
+  color: #FFFFFF;
+  background-color: #FF6400;
+  padding: 15px 30px;
+  border-radius: 25px;
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+main section .ucard {
+  background-color: #FAFAFA;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+main section .ucard .cardimage {
+  width: 80%;
+}
+main section .ucard .cardimage img {
+  position: absolute;
+  width: 40%;
+  top: 145%;
+}
+main section .ucard .infocard h2 {
+  font-size: 36px;
+  font-family: bold;
+  color: #FF6400;
+  margin-top: 5rem;
+}
+main section .ucard .infocard p {
+  font-size: 16px;
+  font-family: regular;
+  font-weight: 400;
+  color: #000000;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+main section .ucard .infocard p span {
+  font-family: regularpro;
+  font-size: 18px;
+}
+main section .ucard .infocard a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #969696;
+  font-family: bold;
+  border: 1px solid #E6E6E6;
+  padding: 15px 30px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+main section .ucard .infocard .differenta {
+  background-color: #FF6400;
+  border: none;
+  color: #FFFFFF;
+}
+main section .ubank {
+  background-color: #FAFAFA;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+main section .ubank .text {
+  margin: 4rem 0 0 3rem;
+}
+main section .ubank .text h2 {
+  font-size: 30px;
+  font-family: bold;
+  font-weight: 900;
+  color: #FF6400;
+  margin-bottom: 1rem;
+}
+main section .ubank .text p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: regular;
+}
+main section .ubank .text p span {
+  font-family: regularpro;
+  font-size: 16px;
+}
+main section .ubank .text .icons {
+  margin-bottom: 3rem;
+}
+main section .ubank .text .icons img {
+  margin-right: 0.6rem;
+}
+main section .ubank .text a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #FF6400;
+  font-family: bold;
+  padding: 15px 40px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+main section .ubank .appimage {
+  width: 50%;
+  position: absolute;
+  top: -24%;
+  left: 55%;
+}
+main section .ubank .appimage img {
+  width: 82%;
+}
+main section .currency {
+  background-color: #FAFAFA;
+  padding: 3rem 4rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+main section .currency h1 {
+  font-size: 30px;
+  color: #FF6400;
+  font-family: bold;
+  margin-bottom: 2rem;
+}
+main section .currency .boxes .box h4 {
+  font-size: 18px;
+  color: #000000;
+  font-family: bold;
+}
+main section .currency .boxes .box p {
+  font-size: 14px;
+  color: rgba(50, 50, 50, 0.5);
+  margin-bottom: 2rem;
+}
+main section .currency .boxes .box table th {
+  font-size: 14px;
+  font-family: extra-light;
+  color: #ACB3B8;
+  border-bottom: 1px solid #ACB3B8;
+  padding-bottom: 10px;
+  text-align: center;
+}
+main section .currency .boxes .box table td {
+  font-size: 14px;
+  color: #323232;
+  font-weight: bold;
+  font-family: arial;
+  text-align: center;
+  padding: 10px;
+}
+main section .currency .boxes .box table td i {
+  font-size: 8px;
+}
+main section .currency .currencycalc {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+main section .currency .currencycalc .text h2 {
+  font-size: 20px;
+  font-family: bold;
+  color: #000000;
+}
+main section .currency .currencycalc .text p {
+  font-size: 12px;
+  font-family: regular;
+  color: rgba(50, 50, 50, 0.5);
+}
+main section .currency .currencycalc .calc .operation {
+  position: relative;
+}
+main section .currency .currencycalc .calc .operation input {
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  outline-style: none;
+  border: 1px solid #E6E6E6;
+  font-size: 18px;
+  font-family: regularpro;
+  color: transparent !important;
+}
+main section .currency .currencycalc .calc .operation #firstinputspan {
+  font-size: 18px;
+  font-family: regularpro;
+  color: #000000;
+  position: absolute;
+  top: 32.5%;
+  left: 5%;
+  z-index: 1;
+}
+main section .currency .currencycalc .calc .operation #secondinputspan {
+  font-size: 18px;
+  font-family: regularpro;
+  color: #000000;
+  position: absolute;
+  top: 32.5%;
+  left: 52%;
+  z-index: 1;
+}
+main section .currency .currencycalc .calc .operation i {
+  color: #FF6400;
+  font-size: 18px;
+  margin: 0 0.5rem;
+}
+main section .currency .currencycalc .calc .operation #maincurrency {
+  font-size: 16px;
+  font-family: regular;
+  color: #000000;
+  position: absolute;
+  top: 36%;
+  left: 30%;
+  cursor: pointer;
+}
+main section .currency .currencycalc .calc .operation #secondcurrency {
+  font-size: 16px;
+  font-family: regular;
+  color: #000000;
+  position: absolute;
+  top: 36%;
+  left: 77%;
+  cursor: pointer;
+}
+main section .currency .currencycalc .calc .operation .firstchevron {
+  font-size: 10px;
+  color: #000000;
+  position: absolute;
+  top: 44%;
+  left: 35%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main section .currency .currencycalc .calc .operation .secondchevron {
+  font-size: 10px;
+  color: #000000;
+  position: absolute;
+  top: 44%;
+  left: 82%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  width: 15%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 0px black;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+  padding: 5px 0;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a:hover {
+  background-color: whitesmoke;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a .same {
+  font-size: 16px;
+  font-family: regular;
+  color: #000000;
+  margin-left: 5px;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a .flag {
+  padding: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a .usaflag {
+  background-image: url(https://unibank.az/assets/images/usd.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a .rusflag {
+  background-image: url(https://unibank.az/assets/images/rub.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a .gbflag {
+  background-image: url(https://unibank.az/assets/images/gbp.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a .euroflag {
+  background-image: url(https://unibank.az/assets/images/euro.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions a .azeflag {
+  background-image: url(https://unibank.az/assets/images/azn.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 {
+  position: absolute;
+  top: 75%;
+  left: 72%;
+  width: 15%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 0px black;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+  padding: 5px 0;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a:hover {
+  background-color: whitesmoke;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a .same {
+  font-size: 16px;
+  font-family: regular;
+  color: #000000;
+  margin-left: 5px;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a .flag {
+  padding: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a .usaflag2 {
+  background-image: url(https://unibank.az/assets/images/usd.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a .rusflag2 {
+  background-image: url(https://unibank.az/assets/images/rub.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a .gbflag2 {
+  background-image: url(https://unibank.az/assets/images/gbp.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a .euroflag2 {
+  background-image: url(https://unibank.az/assets/images/euro.png);
+}
+main section .currency .currencycalc .calc .operation .reserveoptions2 a .azeflag2 {
+  background-image: url(https://unibank.az/assets/images/azn.png);
+}
+main section .information .box {
+  background-color: #FAFAFA;
+  padding: 2rem 2.4rem;
+  border-radius: 10px;
+  height: 300px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 2rem;
+}
+main section .information .box:hover {
+  background-color: #FF6400;
+}
+main section .information .box:hover h4, main section .information .box:hover p, main section .information .box:hover span {
+  color: #FFFFFF;
+}
+main section .information .box h4 {
+  color: #FF6400;
+  font-size: 15px;
+  font-family: arial;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+main section .information .box p {
+  font-size: 14px;
+  color: #444444;
+  font-family: regular;
+  font-weight: 500;
+  line-height: 20px;
+}
+main section .information .box p span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444444;
+  font-size: 14px;
+}
+main section .information .box span {
+  color: #ACB3B8;
+  font-size: 12px;
+}
+main section .information a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 16px 25px;
+  border-radius: 25px;
+  background-color: #FF6400;
+  font-size: 14px;
+  font-family: bold;
+  display: block;
+  width: 13%;
+  text-align: center;
+  margin: auto;
+}
+main section .allcontent {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 4rem;
+}
+main section .allcontent .service {
+  width: 55%;
+  background-color: #FAFAFA;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  position: relative;
+  height: 280px;
+}
+main section .allcontent .service h2 {
+  font-size: 28px;
+  color: #FF6400;
+  font-family: bold;
+  width: 20%;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+main section .allcontent .service p {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+main section .allcontent .service img {
+  width: 35%;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+}
+main section .allcontent .service a {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  font-family: bold;
+  width: 30%;
+  text-align: center;
+  display: block;
+  padding: 16px 25px;
+}
+main section .allcontent .connect {
+  width: 40%;
+  background-color: #FAFAFA;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  position: relative;
+  height: 280px;
+}
+main section .allcontent .connect h2 {
+  color: #FF6400;
+  font-family: bold;
+  font-size: 26px;
+  width: 68%;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+main section .allcontent .connect p {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+  width: 68%;
+  margin-bottom: 1rem;
+}
+main section .allcontent .connect p span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main section .allcontent .connect a {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  font-family: bold;
+  width: 40%;
+  text-align: center;
+  display: block;
+  padding: 16px 25px;
+}
+main section .allcontent .connect img {
+  width: 70%;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+}
+
+.chatdiv {
+  width: 320px;
+  height: 550px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  position: fixed;
+  top: 5%;
+  left: 72%;
+  box-shadow: 10px 10px 33px 0 rgba(0, 0, 0, 0.5);
+}
+.chatdiv .chattitle {
+  padding: 5px 15px 10px;
+  background-color: #FFFFFF;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+}
+.chatdiv .chattitle .chatfulloptions {
+  position: absolute;
+  top: 52px;
+  left: 5%;
+  z-index: 1;
+  box-shadow: 10px 10px 33px 0 rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions {
+  width: 100%;
+  position: relative;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions .margintransfer {
+  margin-left: 3px !important;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions .colortransfer {
+  background-color: silver !important;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions #firstp {
+  background-color: silver;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions p {
+  padding: 15px;
+  margin: 0;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions p i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions p span {
+  font-size: 14px;
+  font-family: regular;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions .volumer {
+  width: 50px;
+  height: 24px;
+  border-radius: 30px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 64%;
+  left: 68%;
+  cursor: pointer;
+}
+.chatdiv .chattitle .chatfulloptions .chatoptions .volumer .volumechanger {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  margin-left: 28px;
+  transition: 0.5s;
+}
+.chatdiv .chattitle .dottext {
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(66, 77, 87);
+}
+.chatdiv .chattitle .welcomechat {
+  color: rgb(66, 77, 87);
+  font-weight: bold;
+}
+.chatdiv .chattitle .chatclose {
+  font-size: 20px;
+  margin-left: 10px;
+  color: rgb(66, 77, 87);
+  cursor: pointer;
+}
+.chatdiv .chatcontent {
+  width: 270px;
+  height: 400px;
+  background-color: #FFFFFF;
+  margin: 30px auto 50px;
+  border-radius: 10px;
+  position: relative;
+  padding: 30px 15px 10px;
+}
+.chatdiv .chatcontent h5 {
+  font-size: 15px;
+  font-family: regular;
+  color: #000000;
+}
+.chatdiv .chatcontent h6 {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+  position: relative;
+  margin-top: 8px;
+}
+.chatdiv .chatcontent h6::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+.chatdiv .chatcontent input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline-style: none;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 14px;
+  font-family: regular;
+  background-color: whitesmoke;
+}
+.chatdiv .chatcontent button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #FF6400;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: regular;
+  font-size: 14px;
+}
+.chatdiv .chatcontent .chatuser {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 100%;
+  background-color: #FF6400;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer .allfooter {
+  display: flex;
+  justify-content: space-between;
+}
+footer .allfooter a {
+  text-decoration: none;
+}
+footer .allfooter .main a {
+  font-size: 14px;
+  color: #000000;
+  font-family: bold;
+}
+footer .allfooter .box {
+  margin-top: 0.5rem;
+}
+footer .allfooter .box a {
+  font-size: 12px;
+  color: #000000;
+  font-family: regular;
+}
+footer .footericons {
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+footer .footericons i {
+  margin-right: 0.25rem;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 100%;
+  background-color: #ACB3B8;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+footer .footericons .orange {
+  background-color: #FF6400;
+}
+footer hr {
+  margin-bottom: 1.5rem;
+}
+footer .theend {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+footer .theend .leftend {
+  width: 100%;
+}
+footer .theend .leftend h4 {
+  color: #000000;
+  font-size: 13px;
+}
+footer .theend .leftend p {
+  color: #323232;
+  font-size: 13px;
+}
+footer .theend .rightend {
+  display: flex;
+  justify-content: end;
+}
+footer .theend .rightend img {
+  width: 10%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.fixed {
+  font-size: 30px;
+  color: #FF6400;
+  padding: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 33px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
+  cursor: pointer;
+  position: fixed;
+  top: 83%;
+  left: 93%;
+}
+
+@media (max-width: 576px) {
+  .customcontainer {
+    padding: 0 1rem;
+  }
+  .sliderpage {
+    display: none !important;
+  }
+  .responsivesliderpage {
+    display: block !important;
+    background-color: #FF6400;
+    height: 400px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    flex-basis: 100%;
+  }
+  .responsivesliderpage .img {
+    width: 45%;
+    margin: auto;
+  }
+  .responsivesliderpage .img img {
+    width: 100%;
+  }
+  .responsivesliderpage .img2 {
+    width: 50%;
+    margin-top: 2.1rem;
+  }
+  .responsivesliderpage .img3 {
+    margin-top: 3rem;
+  }
+  .responsivesliderpage .img3 img {
+    width: 100%;
+  }
+  .responsivesliderpage .img4 {
+    width: 50%;
+    margin-top: 5.6rem;
+  }
+  .responsivesliderpage .text {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .responsivesliderpage .text h1 {
+    font-size: 24px;
+    font-family: bold;
+    color: #FFFFFF;
+  }
+  .responsivesliderpage .text p {
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    width: 70%;
+    margin: 0 auto 2rem;
+  }
+  .responsivesliderpage .text a {
+    font-size: 12px;
+    font-family: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    padding: 16px 25px;
+    border-radius: 25px;
+  }
+  .info .box {
+    padding: 1.5rem 0 !important;
+  }
+  .info .box h4 {
+    font-size: 14px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .info .box h2 {
+    font-size: 30px !important;
+  }
+  .info .box span {
+    font-size: 12px !important;
+    margin-bottom: 1rem !important;
+  }
+  .info .box a {
+    font-size: 12px !important;
+    padding: 10px 16px !important;
+    width: 40% !important;
+  }
+  .ucard {
+    margin: 0 0.5rem !important;
+    height: 600px !important;
+    padding: 0 1rem !important;
+  }
+  .ucard .cardimage {
+    position: relative;
+    width: 90% !important;
+    height: 180px !important;
+  }
+  .ucard .cardimage img {
+    width: 100% !important;
+    position: absolute;
+    top: -35% !important;
+  }
+  .ucard .infocard h2 {
+    font-size: 22px !important;
+  }
+  .ucard .infocard p {
+    font-size: 13px !important;
+    margin-bottom: 1rem !important;
+    width: 95% !important;
+  }
+  .ucard .infocard p span {
+    font-size: 15px !important;
+  }
+  .ucard .infocard .differenta {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem !important;
+  }
+  .ucard .infocard a {
+    font-size: 12px !important;
+  }
+  .ucard .infocard .diff2 {
+    padding: 15px 70px;
+  }
+  .ubank {
+    margin: 1rem 0.5rem 0 !important;
+    height: 600px !important;
+  }
+  .ubank .text {
+    margin: 0 !important;
+    padding: 2rem 1rem !important;
+  }
+  .ubank .text h2 {
+    font-size: 24px !important;
+  }
+  .ubank .text .simple {
+    display: none;
+  }
+  .ubank .text .responsivesimple {
+    display: block !important;
+  }
+  .ubank .text .responsivesimple .icons {
+    margin-bottom: 1rem !important;
+  }
+  .ubank .text .responsivesimple .icons img {
+    width: 20%;
+  }
+  .ubank .text .responsivesimple p {
+    font-size: 12px;
+  }
+  .ubank .text a {
+    font-size: 12px !important;
+    padding: 15px 30px !important;
+  }
+  .ubank .appimage {
+    width: 80% !important;
+    top: 32% !important;
+    left: 10% !important;
+  }
+  .ubank .appimage img {
+    width: 100% !important;
+  }
+  .currency {
+    padding: 2rem !important;
+  }
+  .currency h1 {
+    font-size: 22px !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .currency .ahref {
+    display: block !important;
+  }
+  .currency .ahref a {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: bold;
+    color: #A1A1A1;
+    padding: 12px 18px;
+    border: 2px solid #969696;
+    border-radius: 25px;
+    margin-right: 10px;
+  }
+  .currency .boxes .box h4 {
+    display: none !important;
+  }
+  .currency .boxes .box .displaynone {
+    display: none !important;
+  }
+  .currency .boxes .box p {
+    margin-top: 2rem !important;
+  }
+  .currency .boxes .box table {
+    width: 100% !important;
+  }
+  .currency .currencycalc {
+    padding: 3rem 2rem !important;
+  }
+  .currency .currencycalc .text h2 {
+    font-size: 18px !important;
+  }
+  .currency .currencycalc .calc .operation .hidden {
+    display: none !important;
+  }
+  .currency .currencycalc .calc .operation input {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  .currency .currencycalc .calc .operation #firstinputspan {
+    top: 15% !important;
+    left: 8.5% !important;
+  }
+  .currency .currencycalc .calc .operation #secondinputspan {
+    top: 70% !important;
+    left: 8.5% !important;
+  }
+  .currency .currencycalc .calc .operation #maincurrency {
+    top: 18% !important;
+    left: 77% !important;
+  }
+  .currency .currencycalc .calc .operation .firstchevron {
+    top: 22% !important;
+    left: 87% !important;
+  }
+  .currency .currencycalc .calc .operation #secondcurrency {
+    top: 70% !important;
+    left: 77% !important;
+  }
+  .currency .currencycalc .calc .operation .secondchevron {
+    top: 74% !important;
+    left: 87% !important;
+  }
+  .currency .currencycalc .calc .operation .reserveoptions {
+    width: 20% !important;
+    top: 35% !important;
+    left: 75% !important;
+  }
+  .currency .currencycalc .calc .operation .reserveoptions2 {
+    width: 20% !important;
+    top: 90% !important;
+    left: 75% !important;
+  }
+  .information .box {
+    height: 220px !important;
+  }
+  .information .box h4 {
+    font-size: 14px !important;
+  }
+  .information .box p {
+    font-size: 12px !important;
+  }
+  .information .box p span {
+    font-size: 12px !important;
+  }
+  .information .box span {
+    font-size: 10px !important;
+  }
+  .information a {
+    padding: 12px !important;
+    font-size: 12px !important;
+    width: 25% !important;
+  }
+  .allcontent {
+    display: block !important;
+    padding: 2rem 0 1rem !important;
+  }
+  .allcontent .service {
+    width: 100% !important;
+    padding: 1rem 2rem !important;
+    height: 225px !important;
+    margin-bottom: 1rem !important;
+  }
+  .allcontent .service h2 {
+    font-size: 18px !important;
+    width: 50% !important;
+    margin-bottom: 1rem !important;
+  }
+  .allcontent .service p {
+    font-size: 12px !important;
+    width: 80% !important;
+    margin-bottom: 3rem !important;
+  }
+  .allcontent .service a {
+    font-size: 12px !important;
+    padding: 14px 20px !important;
+  }
+  .allcontent .connect {
+    width: 100% !important;
+    padding: 1rem 2rem !important;
+    height: 225px !important;
+    margin-bottom: 1rem !important;
+  }
+  .allcontent .connect h2 {
+    font-size: 18px !important;
+    width: 45% !important;
+    margin-bottom: 1rem !important;
+  }
+  .allcontent .connect p {
+    font-size: 12px !important;
+    width: 90% !important;
+    margin-bottom: 2rem !important;
+  }
+  .allcontent .connect a {
+    font-size: 12px !important;
+    width: 32% !important;
+    padding: 14px 14px !important;
+  }
+  .hamburgermenudiv {
+    background-color: #FAFAFA;
+    height: 650px;
+    margin-top: 0.5rem !important;
+    padding: 1rem 0 !important;
+    position: absolute;
+    top: 8.2%;
+    width: 100%;
+    z-index: 1 !important;
+  }
+  .hamburgermenudiv .menuhamburger {
+    width: 30%;
+    margin: auto;
+  }
+  .hamburgermenudiv .menuhamburger a {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: regular;
+    color: #323232;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 14px -10px rgba(0, 0, 0, 0.3);
+  }
+  .hamburgermenudiv .navigationmenu {
+    margin-top: 1.5rem;
+  }
+  .hamburgermenudiv .navigationmenu a {
+    display: block;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: bold;
+    margin-bottom: 0.7rem;
+  }
+  .hamburgermenudiv .navbarmenu a {
+    display: block;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    font-family: regular;
+    margin-bottom: 0.7rem;
+  }
+  .hamburgermenudiv .optionmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .hamburgermenudiv .optionmenu .themehamburger {
+    margin-right: 0.8rem;
+  }
+  .hamburgermenudiv .optionmenu .themehamburger i {
+    font-size: 16px;
+    padding: 8px 10px 9px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .hamburgermenudiv .optionmenu .themehamburger .night {
+    color: #FFFFFF;
+    background-color: #323232;
+  }
+  .hamburgermenudiv .optionmenu .themehamburger .morning {
+    color: #323232;
+    background-color: #FFFFFF;
+  }
+  .hamburgermenudiv .optionmenu .searchresp {
+    margin-right: 0.8rem;
+  }
+  .hamburgermenudiv .optionmenu .searchresp span i {
+    font-size: 16px;
+    color: #323232;
+    padding: 8px 10px 11px 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+  }
+  .hamburgermenudiv .optionmenu .langhamburger {
+    margin-right: 0.8rem;
+  }
+  .hamburgermenudiv .optionmenu .langhamburger a {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: bold;
+    color: #323232;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 14px -10px rgba(0, 0, 0, 0.3);
+  }
+  .chatdiv {
+    left: 36% !important;
+  }
+}
+@font-face {
+  font-family: regularpro;
+  src: url(/assets/fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: boldpro;
+  src: url(/assets/fonts/SourceSansPro-Bold.ttf);
+}
+.selectloc {
+  color: #FF6400 !important;
+  border-color: #FF6400 !important;
+  position: relative;
+}
+.selectloc::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-35%);
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  background-color: #FFFFFF;
+  left: 50%;
+}
+
+.atm {
+  margin-bottom: 2rem;
+}
+.atm h1 {
+  font-size: 32px;
+  font-family: bold;
+  color: #FF6400;
+  margin-bottom: 2rem;
+}
+.atm a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: bold;
+  color: #A1A1A1;
+  padding: 15px 30px;
+  border: 2px solid #969696;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+iframe {
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.branch {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  height: 120px;
+  margin: 1rem 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.branch:hover {
+  background-color: #FF6400;
+}
+.branch:hover .address h4, .branch:hover .address p, .branch:hover .address i {
+  color: #FFFFFF;
+}
+.branch:hover .block .time p, .branch:hover .block .time i {
+  color: #FFFFFF;
+}
+.branch:hover .block .about p {
+  color: #FFFFFF;
+}
+.branch .address {
+  position: relative;
+  width: 45%;
+}
+.branch .address h4 {
+  font-size: 20px;
+  color: #000000;
+  font-family: boldpro;
+}
+.branch .address p {
+  font-size: 16px;
+  color: #000000;
+  font-family: regularpro;
+}
+.branch .address i {
+  color: #FF6400;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90%;
+}
+.branch .block {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+.branch .block .time {
+  position: relative;
+  padding-top: 0.5rem;
+  width: 60%;
+}
+.branch .block .time p {
+  font-size: 15px;
+  font-family: regularpro;
+  line-height: 8px;
+  color: #000000;
+  width: 100%;
+  margin: 0.5rem;
+}
+.branch .block .time i {
+  color: #FF6400;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 85%;
+}
+.branch .block .about {
+  width: 40%;
+}
+.branch .block .about p {
+  font-size: 15px;
+  font-family: regularpro;
+  color: #000000;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.warning2 {
+  background-color: #FF6400;
+  padding: 1.2rem 3rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.warning2 i {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+.warning2 p {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: boldpro;
+  display: inline;
+}
+
+.servicefooter {
+  padding-top: 4rem !important;
+}
+
+@media (max-width: 576px) {
+  .customcontainer {
+    padding: 0 1rem;
+  }
+  header {
+    display: none;
+  }
+  .responsiveheader {
+    display: flex !important;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+  }
+  .responsiveheader .hamburgermenu i {
+    font-size: 20px;
+    background-color: #F5F5F6;
+    padding: 12px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .responsiveheader .logo {
+    width: 5%;
+  }
+  .responsiveheader .logo img {
+    width: 100%;
+  }
+  .responsiveheader .phone a {
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #F5F5F6;
+    border-radius: 25px;
+  }
+  .responsiveheader .phone a i {
+    font-size: 18px;
+    color: #FF6400;
+  }
+  .responsiveheader .phone a span {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial;
+    color: #000000;
+  }
+  .atm {
+    margin-bottom: 0.5rem;
+  }
+  .atm h1 {
+    font-size: 22px;
+    padding-top: 1rem;
+  }
+  .atm a {
+    font-size: 10px;
+    padding: 9px 18px;
+    margin-right: 2px;
+  }
+  .map iframe {
+    border-radius: 10px;
+  }
+  .fixed {
+    left: 85%;
+    font-size: 24px;
+  }
+  .branch {
+    display: block;
+    height: 120px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+  }
+  .branch .address {
+    width: 100%;
+    height: 50px;
+    position: relative;
+  }
+  .branch .address h4 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .branch .address p {
+    font-size: 14px;
+  }
+  .branch .address i {
+    font-size: 16px;
+    top: 150%;
+    left: 0%;
+  }
+  .branch .block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .branch .block .time {
+    position: relative;
+  }
+  .branch .block .time p {
+    font-size: 12px;
+    margin: 0 0 0.2rem 2rem;
+  }
+  .branch .block .time i {
+    position: absolute;
+    left: 95%;
+    font-size: 16px;
+  }
+  .branch .block .about p {
+    font-size: 12px;
+    margin: 0.8rem;
+  }
+  .warning {
+    padding: 0 2rem;
+    border-radius: 10px;
+    padding-bottom: 0.5rem;
+  }
+  .warning i {
+    font-size: 16px;
+  }
+  .warning p {
+    font-size: 14px;
+    text-indent: 30px;
+  }
+  .allfooter {
+    display: none !important;
+  }
+  .footericons {
+    width: 65%;
+    margin: auto;
+  }
+  .theend {
+    flex-direction: column-reverse;
+    margin-bottom: 0 !important;
+  }
+  .theend .rightend {
+    justify-content: center !important;
+    margin-bottom: 1rem;
+  }
+  .theend .rightend img {
+    width: 15% !important;
+  }
+  .theend .leftend {
+    text-align: center;
+  }
+}
+.hrsection {
+  margin-bottom: 2rem;
+}
+.hrsection h1 {
+  font-size: 32px;
+  font-family: bold;
+  color: #FF6400;
+  margin-bottom: 2rem;
+}
+.hrsection a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: bold;
+  color: #A1A1A1;
+  padding: 15px 30px;
+  border: 2px solid #969696;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.video {
+  height: 270px;
+}
+
+.hrinfo {
+  margin-bottom: 2rem;
+}
+.hrinfo .box {
+  background-color: #FAFAFA;
+  padding: 2.5rem 3rem;
+  height: 280px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.hrinfo .box:hover {
+  background-color: #FF6400;
+}
+.hrinfo .box:hover .chevron {
+  color: #FFFFFF;
+}
+.hrinfo .box:hover .hricon i {
+  color: #FFFFFF;
+}
+.hrinfo .box:hover .text h4, .hrinfo .box:hover .text p {
+  color: #FFFFFF;
+}
+.hrinfo .box .hricon {
+  text-align: center;
+}
+.hrinfo .box .hricon i {
+  font-size: 48px;
+  color: #FF6400;
+}
+.hrinfo .box .text h4 {
+  font-size: 20px;
+  font-family: bold;
+  text-align: center;
+  margin-top: 1rem;
+  color: #000000;
+}
+.hrinfo .box .text p {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  font-family: regular;
+}
+.hrinfo .box .text p span {
+  font-family: regularpro;
+}
+
+.worker .person {
+  background-color: #FAFAFA;
+  padding: 2rem 2rem 2rem 4rem;
+  border-radius: 10px;
+  height: 340px;
+  margin-bottom: 2rem;
+}
+.worker .person .img {
+  width: 20%;
+  border-radius: 100%;
+}
+.worker .person .img img {
+  width: 100%;
+  border-radius: 100%;
+}
+.worker .person .text h4 {
+  font-size: 20px;
+  font-family: bold;
+  color: #000000;
+  margin-top: 1rem;
+}
+.worker .person .text span {
+  font-size: 14px;
+  font-family: regular;
+  color: rgba(0, 0, 0, 0.5);
+}
+.worker .person .text p {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+  line-height: 18px;
+  margin-top: 0.8rem;
+}
+.worker .person .text p span {
+  font-family: regularpro;
+  color: #000000;
+}
+
+.hrabout {
+  background-color: #FAFAFA;
+  padding: 2rem 2rem 2rem 4rem;
+  border-radius: 10px;
+}
+.hrabout h1 {
+  font-size: 30px;
+  color: #FF6400;
+  font-family: bold;
+}
+.hrabout p {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+}
+.hrabout p span {
+  font-family: regularpro;
+}
+
+.extra {
+  margin: 2rem 0 3rem;
+}
+.extra .box {
+  background-color: #FF6400;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 200px;
+}
+.extra .box .boxicon {
+  text-align: center;
+}
+.extra .box .boxicon i {
+  color: #FFFFFF;
+  font-size: 48px;
+}
+.extra .box .text {
+  margin-top: 1rem;
+}
+.extra .box .text p {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: bold;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.mainh1 {
+  padding-left: 0.8rem;
+  color: #FF6400;
+  font-size: 32px;
+  font-family: bold;
+}
+
+.inform {
+  padding: 1rem 0 5rem;
+}
+.inform .box h2 {
+  font-size: 20px;
+  color: #000000;
+  font-family: bold;
+}
+.inform .box p {
+  color: #000000;
+  font-size: 14px;
+  font-family: regular;
+}
+.inform .box p span {
+  font-family: regularpro;
+}
+
+@media (max-width: 576px) {
+  .hrsection {
+    margin-bottom: 0.2rem;
+  }
+  .hrsection h1 {
+    font-size: 22px;
+    padding-top: 1rem;
+  }
+  .hrsection a {
+    font-size: 8px;
+    padding: 9px 14px;
+    margin-right: 1px;
+  }
+  .video {
+    border-radius: 10px;
+    height: 200px;
+  }
+  .hrinfo .box {
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    padding: 0.8rem 3rem;
+    position: relative;
+  }
+  .hrinfo .box .hricon {
+    text-align: start;
+    position: relative;
+  }
+  .hrinfo .box .hricon i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hrinfo .box .text {
+    margin-left: 3rem;
+  }
+  .hrinfo .box .text h4 {
+    text-align: start;
+    font-size: 16px;
+  }
+  .hrinfo .box .text p {
+    text-align: start;
+    font-size: 12px;
+  }
+  .hrinfo .chevron {
+    display: block !important;
+    position: absolute;
+    top: 45%;
+    left: 92%;
+    font-size: 10px;
+    color: #969696;
+  }
+  .worker .person {
+    margin-bottom: 0.3rem !important;
+    padding: 1rem 2rem 1rem 4rem !important;
+    height: 280px;
+  }
+  .worker .text h4 {
+    font-size: 16px !important;
+  }
+  .worker .text span {
+    font-size: 10px !important;
+  }
+  .worker .text p {
+    font-size: 11px !important;
+    margin-top: 0.3rem !important;
+  }
+  .hrabout {
+    margin-top: 1rem;
+  }
+  .hrabout h1 {
+    font-size: 18px;
+  }
+  .hrabout p {
+    font-size: 11px !important;
+  }
+  .extra {
+    margin-bottom: 1rem;
+  }
+  .extra .box {
+    display: flex !important;
+    justify-content: space-between !important;
+    height: 80px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+  }
+  .extra .box .boxicon {
+    text-align: start;
+    width: 10%;
+  }
+  .extra .box .boxicon i {
+    font-size: 28px;
+  }
+  .extra .box .text {
+    width: 90%;
+    margin: 0;
+  }
+  .extra .box .text p {
+    width: 100%;
+    text-align: start !important;
+    font-size: 12px;
+  }
+  .mainh1 {
+    font-size: 20px;
+  }
+  .inform {
+    padding-bottom: 1rem;
+  }
+  .inform .box h2 {
+    font-size: 14px;
+  }
+  .inform .box p {
+    font-size: 12px;
+  }
+}
+.title {
+  padding-top: 1rem;
+}
+.title h1 {
+  font-size: 30px;
+  font-family: boldpro;
+  color: #FF6400;
+}
+
+.ucarddiv {
+  padding: 3rem 4rem;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+.ucarddiv .img {
+  margin-right: 2rem;
+}
+.ucarddiv .img img {
+  width: 100%;
+}
+.ucarddiv h1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.ucarddiv h1 span {
+  font-size: 28px;
+  font-family: boldpro;
+  color: #000000;
+}
+.ucarddiv h1 a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: bold;
+  padding: 15px 30px;
+  background-color: #FF6400;
+  border-radius: 25px;
+}
+.ucarddiv p {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+}
+.ucarddiv .parametrs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.ucarddiv .parametrs .box i {
+  font-size: 36px;
+  color: #FF6400;
+  margin-right: 10px;
+}
+.ucarddiv .parametrs .box p {
+  display: inline-block;
+  width: 50%;
+  font-size: 18px;
+  color: #000000;
+  font-family: boldpro;
+  line-height: 18px;
+}
+
+.ubankcards {
+  padding: 2rem 0;
+}
+.ubankcards .box {
+  padding: 3rem 4rem;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  height: 500px;
+}
+.ubankcards .box .img {
+  width: 60%;
+  border-radius: 10px;
+}
+.ubankcards .box .img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, 0.24);
+}
+.ubankcards .box .text h2 {
+  margin-top: 2rem;
+  font-size: 24px;
+  font-family: boldpro;
+  color: #000000;
+}
+.ubankcards .box .text p {
+  font-size: 14px;
+  color: #000000;
+  font-family: regular;
+  margin-top: 1rem;
+}
+.ubankcards .box .text .cardprice {
+  font-size: 20px;
+  color: #000000;
+  font-family: boldpro;
+}
+.ubankcards .box .text button {
+  background-color: #FF6400;
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: bold;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .ucarddiv {
+    padding: 1.5rem 2rem 6rem 2rem;
+  }
+  .ucarddiv .img {
+    padding: 0 4rem;
+  }
+  .ucarddiv p {
+    font-size: 12px;
+  }
+  .ucarddiv h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .ucarddiv h1 span {
+    font-size: 18px;
+  }
+  .ucarddiv h1 a {
+    position: absolute;
+    top: 680%;
+  }
+  .ucarddiv .parametrs {
+    margin-top: 0;
+  }
+  .ucarddiv .parametrs .box i {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .ucarddiv .parametrs .box p {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+  .ubankcards .box {
+    padding: 1.5rem 2rem;
+  }
+  .ubankcards .box .img {
+    width: 100%;
+  }
+  .ubankcards .box .text h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 18px;
+  }
+  .ubankcards .box .text p {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .ubankcards .box .text .cardprice {
+    font-size: 18px;
+    margin: 0;
+  }
+  .ubankcards .box .text button {
+    font-size: 14px;
+    padding: 10px 20px;
+    display: block;
+    margin: 1rem auto 0;
+  }
+}
+.alert {
+  font-size: 16px;
+  font-family: regular;
+}
+
+.table {
+  padding-bottom: 3rem;
+}
+.table .thead th {
+  text-align: center;
+  font-size: 16px;
+  font-family: regular;
+}
+.table .tbody {
+  height: 205px;
+  background-color: #FAFAFA;
+}
+.table .tbody th {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+}
+.table .tbody td {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+}
+.table .tbody td input {
+  padding: 10px;
+  width: 25%;
+  font-size: 16px !important;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+.table .tbody td button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: red;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: bold;
+}
+.table .tbody .img {
+  width: 25%;
+  padding: 2rem;
+}
+.table .tbody .img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.foralert {
+  width: 100% !important;
+  height: 300px !important;
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .alert {
+    font-size: 14px;
+    width: 50% !important;
+  }
+  .table {
+    padding-top: 2rem;
+  }
+  .table .thead th {
+    font-size: 14px;
+  }
+  .table .tbody th {
+    font-size: 14px;
+  }
+  .table .tbody td {
+    font-size: 14px;
+  }
+  .table .tbody td input {
+    padding: 8px 20px;
+  }
+  .table .tbody td button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .table .tbody .img {
+    width: 40%;
+  }
+}
+.darkmode .selecttab::after {
+  border-top: 2px solid #1A1A1A !important;
+  border-right: 2px solid #1A1A1A !important;
+  background-color: #1A1A1A !important;
+}
+.darkmode .selectloc::after {
+  border-top: 2px solid #000000 !important;
+  border-right: 2px solid #000000 !important;
+  background-color: #000000 !important;
+}
+.darkmode .customcontainer {
+  background-color: #000000 !important;
+}
+.darkmode .hamburgermenudiv {
+  background-color: #000000 !important;
+}
+.darkmode .hamburgermenudiv .menuhamburger a, .darkmode .hamburgermenudiv .menuhamburger i, .darkmode .hamburgermenudiv .langhamburger a, .darkmode .hamburgermenudiv .langhamburger i, .darkmode .hamburgermenudiv .searchresp a, .darkmode .hamburgermenudiv .searchresp i {
+  background-color: #323232 !important;
+  color: #FFFFFF !important;
+}
+.darkmode .hamburgermenudiv .navigationmenu a, .darkmode .hamburgermenudiv .navbarmenu a {
+  color: #FFFFFF !important;
+}
+.darkmode .responsiveheader {
+  background-color: #000000 !important;
+}
+.darkmode .responsiveheader .hamburgermenu i, .darkmode .responsiveheader .hamburgermenu a, .darkmode .responsiveheader .phone i, .darkmode .responsiveheader .phone a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.darkmode .responsiveheader .hamburgermenu i {
+  color: #FFFFFF !important;
+}
+.darkmode .responsiveheader .phone i {
+  background-color: transparent !important;
+}
+.darkmode .responsiveheader .phone span {
+  color: #FFFFFF !important;
+}
+.darkmode .firstheader, .darkmode .secondheader {
+  background-color: #000000;
+}
+.darkmode .firstheader nav a, .darkmode .secondheader nav a {
+  color: #FFFFFF !important;
+}
+.darkmode .firstheader .right .menu a, .darkmode .firstheader .right .menu i, .darkmode .firstheader .right .lang a, .darkmode .firstheader .right .lang i, .darkmode .firstheader .right .search a, .darkmode .firstheader .right .search i, .darkmode .secondheader .right .menu a, .darkmode .secondheader .right .menu i, .darkmode .secondheader .right .lang a, .darkmode .secondheader .right .lang i, .darkmode .secondheader .right .search a, .darkmode .secondheader .right .search i {
+  background-color: #323232 !important;
+  color: #FFFFFF !important;
+}
+.darkmode .firstheader span, .darkmode .secondheader span {
+  color: #FFFFFF !important;
+}
+.darkmode #sun {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.darkmode footer {
+  background-color: #000000 !important;
+}
+.darkmode footer .allfooter a {
+  color: #FFFFFF !important;
+}
+.darkmode footer .footericons i {
+  color: #000000 !important;
+}
+.darkmode footer .theend h4, .darkmode footer .theend p {
+  color: #FFFFFF !important;
+}
+.darkmode footer hr {
+  color: #FFFFFF !important;
+}
+.darkmode section {
+  background-color: #000000;
+}
+.darkmode section .info .box {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .info .box h4, .darkmode section .info .box span {
+  color: #FFFFFF !important;
+}
+.darkmode section .ucard {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .ucard .infocard p {
+  color: #FFFFFF !important;
+}
+.darkmode section .ubank {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .ubank .text .simple p {
+  color: #FFFFFF !important;
+}
+.darkmode section .ubank .text .simple .icons img {
+  background-color: silver !important;
+}
+.darkmode section .ubank .responsivesimple p {
+  color: #FFFFFF !important;
+}
+.darkmode section .ubank .responsivesimple img {
+  background-color: silver !important;
+}
+.darkmode section .currency {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .currency .box h4, .darkmode section .currency .box p {
+  color: #FFFFFF !important;
+}
+.darkmode section .currency .box table th, .darkmode section .currency .box table td {
+  color: #FFFFFF !important;
+}
+.darkmode section .currency .currencycalc {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .currency .currencycalc .text h2, .darkmode section .currency .currencycalc .text p {
+  color: #FFFFFF !important;
+}
+.darkmode section .currency .currencycalc .calc .operation input {
+  background-color: #464646;
+  border: 1px solid rgba(50, 50, 50, 0.1);
+  color: #FFFFFF !important;
+}
+.darkmode section .currency .currencycalc .calc .operation span {
+  color: #FFFFFF !important;
+}
+.darkmode section .currency .currencycalc .calc .operation i {
+  color: silver !important;
+}
+.darkmode section .currency .currencycalc .calc .operation .hidden {
+  color: #FF6400 !important;
+}
+.darkmode section .currency .currencycalc .calc .operation .reserveoptions, .darkmode section .currency .currencycalc .calc .operation .reserveoptions2 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .currency .currencycalc .calc .operation .reserveoptions a, .darkmode section .currency .currencycalc .calc .operation .reserveoptions2 a {
+  color: #FFFFFF;
+}
+.darkmode section .information .box {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .information .box h4, .darkmode section .information .box p, .darkmode section .information .box span {
+  color: #FFFFFF !important;
+}
+.darkmode section .information .box:hover {
+  background-color: #FF6400 !important;
+}
+.darkmode section .allcontent .service, .darkmode section .allcontent .connect {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .allcontent .service p, .darkmode section .allcontent .connect p {
+  color: #FFFFFF !important;
+}
+.darkmode section .branch {
+  background: rgba(255, 255, 255, 0.1);
+}
+.darkmode section .branch:hover {
+  background-color: #FF6400 !important;
+}
+.darkmode section .branch .address h4, .darkmode section .branch .address p, .darkmode section .branch .time h4, .darkmode section .branch .time p, .darkmode section .branch .about h4, .darkmode section .branch .about p {
+  color: #FFFFFF !important;
+}
+.darkmode section .warning2 {
+  background: rgba(255, 255, 255, 0.1);
+}
+.darkmode section .hrinfo .box {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .hrinfo .box:hover {
+  background-color: #FF6400 !important;
+}
+.darkmode section .hrinfo .box .text h4, .darkmode section .hrinfo .box .text p {
+  color: #FFFFFF !important;
+}
+.darkmode section .person {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .person .text h4, .darkmode section .person .text span, .darkmode section .person .text p {
+  color: #FFFFFF !important;
+}
+.darkmode section .hrabout {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .hrabout p {
+  color: #FFFFFF !important;
+}
+.darkmode section .inform .box h2, .darkmode section .inform .box p {
+  color: #FFFFFF !important;
+}
+.darkmode section .ucarddiv {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .ucarddiv h1 span {
+  color: #FFFFFF !important;
+}
+.darkmode section .ucarddiv p {
+  color: #FFFFFF !important;
+}
+.darkmode section .ubankcards .box {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .ubankcards .box .text h2, .darkmode section .ubankcards .box .text p {
+  color: #FFFFFF !important;
+}
+.darkmode section .title h1 {
+  color: #FFFFFF !important;
+}
+.darkmode section .table .thead th {
+  color: #FFFFFF !important;
+}
+.darkmode section .table .tbody {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.darkmode section .table .tbody th, .darkmode section .table .tbody td {
+  color: #FFFFFF !important;
+}
+.darkmode section .table .tbody input {
+  color: #FFFFFF !important;
+  background-color: #000000 !important;
+}
+.darkmode .forcedclass {
+  background-color: #000000 !important;
+}
+.darkmode .searchdiv {
+  background-color: rgba(9, 8, 8, 0.9);
+}
+.darkmode .searchdiv .close, .darkmode .searchdiv .loop, .darkmode .searchdiv p {
+  color: #FFFFFF !important;
+}
+.darkmode .searchdiv .searchextension {
+  background-color: rgba(9, 8, 8, 0.9);
+}
+.darkmode .searchdiv .searchextension p span {
+  color: #FFFFFF !important;
+}
+.darkmode .searchdiv .searchextension a {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+.darkmode .searchdiv form input {
+  background-color: #252323;
+  color: #FFFFFF !important;
+}/*# sourceMappingURL=style.css.map */
